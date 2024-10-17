@@ -28,6 +28,7 @@ namespace Mortgage
         public MainWindow()
         {
             InitializeComponent();
+            LoanNumberTextBox.Focus();
         }
 
         /// <summary>

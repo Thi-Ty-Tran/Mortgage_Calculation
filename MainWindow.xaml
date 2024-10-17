@@ -40,17 +40,17 @@
         <Label Content="Loan Duration (years):" Grid.Row="5" Grid.Column="0" Margin="0,0,0,5"/>
 
         <!-- TextBoxes -->
-        <TextBox x:Name="LoanNumberTextBox" Grid.Row="0" Grid.Column="1" Margin="0,0,0,5" ToolTip="Enter the loan number"/>
-        <TextBox x:Name="CustomerNameTextBox" Grid.Row="1" Grid.Column="1" Margin="0,0,0,5" ToolTip="Enter the customer's name"/>
-        <TextBox x:Name="CustomerAddressTextBox" Grid.Row="2" Grid.Column="1" Margin="0,0,0,5" ToolTip="Enter the customer's address"/>
-        <TextBox x:Name="LoanAmountTextBox" Grid.Row="3" Grid.Column="1" Margin="0,0,0,5" ToolTip="Enter the loan amount"/>
-        <TextBox x:Name="InterestRateTextBox" Grid.Row="4" Grid.Column="1" Margin="0,0,0,5" ToolTip="Enter the annual interest rate"/>
-        <TextBox x:Name="LoanDurationTextBox" Grid.Row="5" Grid.Column="1" Margin="0,0,0,5" ToolTip="Enter the loan duration in years"/>
+        <TextBox x:Name="LoanNumberTextBox" Grid.Row="0" Grid.Column="1" Margin="0,0,0,5" ToolTip="Enter the loan number" TabIndex="0"/>
+        <TextBox x:Name="CustomerNameTextBox" Grid.Row="1" Grid.Column="1" Margin="0,0,0,5" ToolTip="Enter the customer's name" TabIndex="1"/>
+        <TextBox x:Name="CustomerAddressTextBox" Grid.Row="2" Grid.Column="1" Margin="0,0,0,5" ToolTip="Enter the customer's address" TabIndex="3"/>
+        <TextBox x:Name="LoanAmountTextBox" Grid.Row="3" Grid.Column="1" Margin="0,0,0,5" ToolTip="Enter the loan amount" TabIndex="4"/>
+        <TextBox x:Name="InterestRateTextBox" Grid.Row="4" Grid.Column="1" Margin="0,0,0,5" ToolTip="Enter the annual interest rate" TabIndex="5"/>
+        <TextBox x:Name="LoanDurationTextBox" Grid.Row="5" Grid.Column="1" Margin="0,0,0,5" ToolTip="Enter the loan duration in years" TabIndex="6"/>
         <TextBox x:Name="OutputTextBox" Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" Margin="0,10,0,0" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" IsReadOnly="True"/>
         
         <!-- Buttons -->
-        <Button x:Name="CalculateButton" Content="_Calculate" Grid.Row="6" Grid.Column="0" Margin="0,10,0,0" Padding="5" Click="CalculateButton_Click" ToolTip="Calculate the mortgage"/>
-        <Button x:Name="ResetButton" Content="_Reset" Grid.Row="6" Grid.Column="1" Margin="5,10,0,0" Padding="5" Click="ResetButton_Click" ToolTip="Reset all fields"/>
-        <Button x:Name="ExitButton" Content="E_xit" Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2" Margin="0,10,0,0" Padding="5" Click="ExitButton_Click" ToolTip="Exit the application"/>
+        <Button x:Name="CalculateButton" Content="_Calculate" Grid.Row="6" Grid.Column="0" Margin="0,10,0,0" Padding="5" Click="CalculateButton_Click" ToolTip="Calculate the mortgage" Background="Yellow" FontWeight="Bold" TabIndex="7" IsDefault="True"/>
+        <Button x:Name="ResetButton" Content="_Reset" Grid.Row="6" Grid.Column="1" Margin="5,10,0,0" Padding="5" Click="ResetButton_Click" ToolTip="Reset all fields" Background="LawnGreen" FontWeight="Bold" TabIndex="8"/>
+        <Button x:Name="ExitButton" Content="E_xit" Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2" Margin="0,10,0,0" Padding="5" Click="ExitButton_Click" ToolTip="Exit the application" Background="Red" FontWeight="Bold" TabIndex="9"/>
     </Grid>
 </Window>
